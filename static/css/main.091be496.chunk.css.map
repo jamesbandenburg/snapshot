@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACE,iBAAkB,CAClB,qCAAuC,CACvC,aACF,CAEA,kBACE,6BACF","file":"main.091be496.chunk.css","sourcesContent":[".App {\n  text-align: center;\n  font-family: 'Noto Sans GP', sans-serif;\n  color: seashell\n}\n\n.backgroundspread {\n  transition: backgroundImage 1s\n}"]}
