@@ -17,14 +17,14 @@ export default class Attractions extends Component {
     async componentDidMount() {
         this.setState({ appear: true })
         
-        let locationsUrl = ` http://api.opentripmap.com/0.1/en/places/geoname?name=${this.state.city}&apikey=${this.state.apiKey}`
+        let locationsUrl = ` https://api.opentripmap.com/0.1/en/places/geoname?name=${this.state.city}&apikey=${this.state.apiKey}`
         try {
         let getLatLon = await fetch(locationsUrl);
         if (getLatLon.ok) {
             let latLonData = await getLatLon.json();
             this.setState({ lat: latLonData.lat, lon: latLonData.lon });
             
-            let attractionsUrl = `http://api.opentripmap.com/0.1/en/places/radius?radius=10000&lon=${this.state.lon}&lat=${this.state.lat}&src_geom=osm&format=json&limit=6&apikey=${this.state.apiKey}`
+            let attractionsUrl = `https://api.opentripmap.com/0.1/en/places/radius?radius=10000&lon=${this.state.lon}&lat=${this.state.lat}&src_geom=osm&format=json&limit=6&apikey=${this.state.apiKey}`
 
             try {
             let res = await fetch(attractionsUrl);
