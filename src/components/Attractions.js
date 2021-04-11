@@ -50,8 +50,8 @@ export default class Attractions extends Component {
             <div className="container-flex jumbotron" style={{ textAlign: "center", margin: "0", paddingTop: "0", backgroundColor: "#8bacb7" }}>
                 <h3 style={{ marginTop: "0", paddingTop: "10px" }}>Top things to see in {this.state.city}:</h3>
                 {this.state.loading === false && 
-                <div className="container-flex justify-content-center" style={{textAlign: "center"}}>
-                    <div className="row" style={{ margin: "16px auto" }}>
+                <div className="container-flex justify-content-center" id="attractions-container" style={{textAlign: "center"}}>
+                    <div className="row" id="attractions-display" style={{ margin: "16px auto" }}>
                         
                         {this.state.attractionData.map((attraction, i) => 
                         <div className="col-md-2" style={{ margin: "16px 0" }}>

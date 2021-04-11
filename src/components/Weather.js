@@ -68,7 +68,7 @@ class Weather extends Component {
         return (
             
             <Collapse in={this.state.appear}>
-            <div className="jumbotron App" style={{textAlign: "center", margin: "0", paddingBottom: "24px", backgroundColor: "#8bacb7"}}>
+            <div className="jumbotron App" id="weather-display" style={{textAlign: "center", margin: "0", paddingBottom: "24px", backgroundColor: "#8bacb7"}}>
                 <div>
                 <h3>Weather for next week in {this.state.city}:</h3>
                 </div>

@@ -45,7 +45,7 @@ render()
        
             <div className="container align-items-center">
                 
-                <form style={{width: "400px", margin: "0 auto"}}>
+                <form id="searchbar" style={{width: "400px", margin: "0 auto"}}>
                 <input type="text" id="search-field" className="form-control" name="text" value={this.state.text} onChange={this.onChange} disabled={this.state.inputDisabled} placeholder="Enter a city..."/>
 
                 {!this.state.isSearched ?

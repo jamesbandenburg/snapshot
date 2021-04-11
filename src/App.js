@@ -49,7 +49,7 @@ render() {
     <div className="App">
   
       <div className="jumbotron justify-content-center align-items-center backgroundspread" style={{textAlign: "center", height: this.state.mainHeight, backgroundImage: `url(${this.state.imgPath})`, backgroundSize: "100%", backgroundPosition: "bottom", margin: "0", borderBottom: "5px solid darkslategrey"}}>
-        <div className="container" style={{ width: "37%", backgroundColor: "#8bacb7", opacity: "0.75", padding: "0 50px 10px 40px", borderRadius: "20px" }}>
+        <div className="container" id="search-container" style={{ width: "37%", backgroundColor: "#8bacb7", opacity: "0.75", padding: "0 50px 10px 40px", borderRadius: "20px" }}>
         <span style={{ fontSize: "6em", fontWeight: "bold" }}>Snapshot</span>
         <h4 style={{ fontWeight: "bold" }}>The world at a glance</h4>
         </div>
