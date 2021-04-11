@@ -15,7 +15,7 @@ class App extends React.Component {
     lat: '',
     lon: '',
     imgPath: background,
-    mainHeight: '596px',
+    mainHeight: '620px',
     showAbout: false
 
   }

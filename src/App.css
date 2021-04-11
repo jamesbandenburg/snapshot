@@ -58,3 +58,119 @@ body {
     height: 40vh !important
   }
 }
+
+@media only screen and (max-width: 1030px) {
+
+  .btn-primary {
+    padding: 5px 24px;
+    font-size: 4rem;
+  }
+
+  #search-field {
+    height: 6rem
+  }
+  #search-container {
+    width: 80% !important;
+    padding: 10px !important;
+    margin: 0 auto !important
+  }
+
+  #forecast-display {   
+    display: flex !important;
+    overflow-x: auto;  
+  }
+
+  #forecast-display ul {
+    display: flex !important;
+    align-items: center;
+    height: 20vh !important;
+  }
+
+  #attractions-container {
+    display: flex !important;
+    overflow-x: auto;
+  }
+
+  #attractions-display {
+    display: flex !important;
+    align-items: center;
+    height: 38vh !important
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .btn-primary {
+    padding: 5px 24px;
+    font-size: 4rem;
+  }
+
+  #search-field {
+    height: 6rem
+  }
+
+  .backgroundspread {
+   
+    width: 100% !important;
+    background-size: auto 100% !important;
+    background-repeat: no-repeat;
+  }
+
+  #search-container {
+    width: 80% !important;
+    padding: 10px !important;
+    margin: 0 auto !important
+  }
+
+  #forecast-display {   
+    display: flex !important;
+    overflow-x: auto;  
+  }
+
+  #forecast-display ul {
+    display: flex !important;
+    align-items: center;
+    height: 20vh !important;
+  }
+
+  #attractions-container {
+    display: flex !important;
+    overflow-x: auto;
+  }
+
+  #attractions-display {
+    display: flex !important;
+    align-items: center;
+    height: 33vh !important
+  }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+
+  .backgroundspread {
+    height: 375px !important;
+    width: 100% !important
+  }
+
+  #attractions-display {
+    height: 40vh !important
+  }
+
+  .btn-primary {
+    padding: 5px 24px;
+    font-size: 20px
+  }
+
+  #search-field {
+    height: 4rem
+  }  
+
+  #attractions-container {
+    padding: 20px 0
+  }
+
+  #attractions-display {
+    height: 70vh !important;
+  
+  }
+}
