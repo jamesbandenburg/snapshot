@@ -1,5 +1,4 @@
 import React from 'react'
-import Modal from 'react-bootstrap/Modal'
 
 
 class Searchbar extends React.Component {

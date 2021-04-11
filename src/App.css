@@ -15,6 +15,10 @@ body {
 
 @media only screen and (max-width: 420px) {
 
+  .btn-primary {
+    font-size: 2.5rem;
+  }
+
   .backgroundspread {
     height: 380px !important;
     width: 100% !important;
@@ -59,12 +63,13 @@ body {
   }
 }
 
-@media only screen and (max-width: 1030px) {
-
-  .btn-primary {
-    padding: 5px 24px;
-    font-size: 4rem;
+@media only screen and (max-width: 525px) and (min-width: 421px) {
+  #search-container span {
+    font-size: 5em !important
   }
+}
+
+@media only screen and (max-width: 1030px) {
 
   #search-field {
     height: 6rem
@@ -76,6 +81,7 @@ body {
   }
 
   #forecast-display {   
+    
     display: flex !important;
     overflow-x: auto;  
   }
@@ -98,7 +104,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width: 421px) {
 
   .btn-primary {
     padding: 5px 24px;
@@ -145,11 +151,23 @@ body {
   }
 }
 
+@media only screen and (max-width: 1080px) and (min-width: 500px) {
+  .btn-primary {
+    padding: 5px 24px;
+    font-size: 4rem;
+  }
+
+}
+
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 
   .backgroundspread {
     height: 375px !important;
     width: 100% !important
+  }
+
+  #forecast-display {
+    height: 160px
   }
 
   #attractions-display {
