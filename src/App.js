@@ -5,7 +5,8 @@ import background from './default-bg.jpg'
 import Attractions from './components/Attractions'
 import ImageSearch from './components/ImageSearch'
 import './App.css'
-import About from './components/About'
+
+
 
 class App extends React.Component {
 
@@ -16,7 +17,7 @@ class App extends React.Component {
     lon: '',
     imgPath: background,
     mainHeight: '620px',
-    showAbout: false
+    
 
   }
 
@@ -47,10 +48,10 @@ class App extends React.Component {
 render() {
   return (
     <div className="App">
-  
-      <div className="jumbotron justify-content-center align-items-center backgroundspread" style={{textAlign: "center", height: this.state.mainHeight, backgroundImage: `url(${this.state.imgPath})`, backgroundSize: "100%", backgroundPosition: "bottom", margin: "0", borderBottom: "5px solid darkslategrey"}}>
-        <div className="container" id="search-container" style={{ width: "37%", backgroundColor: "#8bacb7", opacity: "0.75", padding: "0 50px 10px 40px", borderRadius: "20px" }}>
-        <span style={{ fontSize: "6em", fontWeight: "bold" }}>Snapshot</span>
+      
+      <div className="jumbotron justify-content-center align-middle backgroundspread" style={{textAlign: "center", height: this.state.mainHeight, backgroundImage: `url(${this.state.imgPath})`, backgroundSize: "100%", backgroundPosition: "bottom", margin: "0", borderBottom: "5px solid darkslategrey"}}>
+        <div className="container" id="search-container" style={{ width: "40%", backgroundColor: "#8bacb7", opacity: "0.75", padding: "0 50px 10px 40px", borderRadius: "20px" }}>
+        <span style={{ fontSize: "5.5em", fontWeight: "bold" }}>Snapshot</span>
         <h4 style={{ fontWeight: "bold" }}>The world at a glance</h4>
         </div>
         <br></br>
@@ -62,8 +63,8 @@ render() {
       <div>
       <Weather city={this.state.city} />
       <Attractions city={this.state.city} />
-      <About />
       <ImageSearch city={this.state.city} imgPath={this.imgPath} />
+      
       </div>
       }
 

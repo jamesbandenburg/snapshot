@@ -21,7 +21,7 @@ const Forecast = (props) => {
    
     return (
         <div className="container-flex" id="forecast-display">
-            <ul className="list-group list-group-horizontal list-inline justify-content-evenly">
+            <ul className="list-group list-group-horizontal list-inline justify-content-around">
                 <li className="list-group-item" style={{ width: "110px", height: "160px", margin: "10px", backgroundColor: "seashell", color: "darkslategrey" }}>
                     <h6>Today</h6>
                     <i className={

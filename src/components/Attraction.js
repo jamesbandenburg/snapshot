@@ -30,10 +30,10 @@ const Attraction = (props) => {
 
     return (
         <div className="card App attraction">
-            <div className="card-body" style={{ width: "18rem", height: "auto", backgroundColor: "seashell", color: "darkslategrey", padding: "10px", borderRadius: "5px", border: "1px solid #DDDDDD" }}>
-                <h3 className="card-title">{attData.name}</h3>
-                <p className="card-text" style={{ fontSize: "1.5em" }}>Rating: {attData.rate}/10</p>
-                <p className="card-text" style={{ fontSize: "1.5em" }}>Tags: {categoriesString}</p>
+            <div className="card-body" style={{ width: "12rem", height: "auto", backgroundColor: "seashell", color: "darkslategrey", padding: "10px", borderRadius: "5px", border: "1px solid #DDDDDD" }}>
+                <h3 className="card-title" style={{ fontSize: "1.5em" }}>{attData.name}</h3>
+                <p className="card-text" style={{ fontSize: "1.25em" }}>Rating: {attData.rate}/10</p>
+                <p className="card-text" style={{ fontSize: "1.25em" }}>Tags: {categoriesString}</p>
             </div>
         </div>
     )
